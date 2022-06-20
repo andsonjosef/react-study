@@ -1,8 +1,8 @@
-import { GridTwoColumn } from '.';
+import { GridTwoColumns } from '.';
 
 export default {
-  title: 'GridTwoColumn',
-  component: GridTwoColumn,
+  title: 'GridTwoColumns',
+  component: GridTwoColumns,
   args: {
     title: 'Grid two columns',
     text: `Sint irure id incididunt voluptate.
@@ -13,14 +13,16 @@ export default {
     srcImg: 'assets/images/javascript.svg',
   },
   argTypes: {
-    children: { type: 'string' },
+    title: { type: 'string' },
+    text: { type: 'string' },
+    srcImg: { type: 'string' },
   },
 };
 
 export const Template = (args) => {
   return (
     <div>
-      <GridTwoColumn {...args} />
+      <GridTwoColumns {...args} />
     </div>
   );
 };
